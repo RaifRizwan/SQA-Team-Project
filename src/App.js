@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
-function App() {
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Papa from 'papaparse';
+import RestaurantList from './components/RestaurantList';
+import RestaurantDetail from './components/RestaurantDetail';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+const App = () => {
+  const [restaurants, setRestaurants] = useState([]);
+  const [menu, setMenu] = useState([]);
+
+  useEffect(() => {
+    Papa.parse('/restaurants.csv', {
+      header: true,
+      download: true,
+      complete: (results) => {
+        setRestaurants(results.data);
+      }
+    });
+
+    Papa.parse('/menu.csv', {
+      header: true,
+      download: true,
+      complete: (results) => {
+        setMenu(results.data);
+      }
+    });
+  }, []);
+
+  const findRestaurantById = (id) => {
+    const restaurant = restaurants.find((r) => r.id === id);
+    restaurant.menu = menu.filter((dish) => dish.restaurantId === id);
+    return restaurant;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<RestaurantList restaurants={restaurants} />} />
+        <Route path="/restaurant/:id" element={({ match }) => {
+          const restaurant = findRestaurantById(match.params.id);
+          return <RestaurantDetail restaurant={restaurant} />;
+        }} />
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;

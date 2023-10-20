@@ -1,0 +1,17 @@
+/* src/components/RestaurantList.css */
+
+.RestaurantList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .RestaurantList div {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+  }

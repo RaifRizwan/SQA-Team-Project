@@ -1,0 +1,41 @@
+id,restaurantId,name,description,price
+1,1,Cheesecake,Delicious cheesecake with a variety of flavors,7.50
+2,1,Pasta,Italian style pasta with your choice of sauce,10.00
+3,1,Steak,Grilled steak served with your choice of sides,20.00
+4,1,Bruschetta,Grilled bread rubbed with garlic and topped with diced tomatoes,6.00
+5,1,Tiramisu,Classic Italian dessert made with espresso-soaked ladyfingers,5.50
+6,1,Garlic Bread,Toasted bread served with garlic butter,3.50
+7,1,Spaghetti Carbonara,Spaghetti with pancetta, egg, and Parmesan,12.00
+8,1,Minestrone Soup,Traditional Italian soup with vegetables and pasta,5.00
+9,1,Margherita Pizza,Classic pizza with tomatoes, mozzarella, and basil,8.00
+10,1,Lasagna,Layered pasta with beef, cheese, and tomato sauce,13.00
+11,2,Chicken Burrito,Grilled chicken, rice, beans, and your choice of toppings wrapped in a flour tortilla,7.50
+12,2,Chips and Guacamole,Crispy tortilla chips served with fresh guacamole,3.00
+13,2,Taco,Your choice of meat, cheese, and vegetables in a crunchy shell,2.50
+14,2,Enchiladas,Stuffed tortillas topped with sauce and cheese,8.50
+15,2,Chiles Rellenos,Stuffed peppers with cheese, covered in egg batter and fried,9.00
+16,2,Churros,Deep-fried dough pastry served with chocolate sauce,4.00
+17,2,Flan,Traditional Mexican custard dessert with caramel topping,3.50
+18,2,Carnitas,Slow-cooked pork served with tortillas and salsa,10.00
+19,2,Carne Asada,Grilled steak served with rice, beans, and tortillas,12.00
+20,2,Chimichanga,Deep-fried burrito filled with your choice of meat and cheese,8.00
+21,3,Big Mac,Two all-beef patties, special sauce, lettuce, cheese, pickles, onions on a sesame seed bun,3.99
+22,3,Chicken McNuggets,Crispy chicken nuggets served with your choice of dipping sauce,4.50
+23,3,McFlurry,Creamy vanilla soft serve with your choice of mix-ins,2.99
+24,3,Filet-O-Fish,Fish fillet with tartar sauce and American cheese on a steamed bun,3.79
+25,3,Quarter Pounder,A quarter pound of 100% beef with cheese, pickles, onions, ketchup, and mustard,3.79
+26,3,Apple Pie,Baked apple pie with a flaky crust,1.00
+27,3,Happy Meal,A kids meal with a burger, fries, drink, and a toy,3.99
+28,3,French Fries,Crispy golden fries,1.79
+29,3,McChicken,Crispy chicken sandwich with mayo and lettuce,1.00
+30,3,McDouble,Two beef patties with cheese, pickles, onions, ketchup, and mustard,1.39
+31,4,Pad Thai,Stir-fried rice noodle dish with eggs, tofu, and bean sprouts,10.00
+32,4,Green Curry,Spicy green curry with coconut milk and your choice of meat,8.50
+33,4,Massaman Curry,Mild curry with potatoes, onions, and peanuts,9.00
+34,4,Mango Sticky Rice,Sweet sticky rice served with fresh mango and coconut milk,5.00
+35,4,Tom Yum Soup,Spicy and sour soup with shrimp, mushrooms, and tomatoes,7.00
+36,4,Spring Rolls,Deep-fried rolls filled with vegetables, served with sweet chili sauce,4.00
+37,4,Chicken Satay,Grilled chicken skewers served with peanut sauce,6.50
+38,4,Papaya Salad,Spicy salad made with shredded green papaya, tomatoes, and peanuts,7.00
+39,4,Red Curry,Spicy red curry with coconut milk and your choice of meat,8.50
+40,4,Pad See Ew,Stir-fried noodles with soy sauce, egg, and broccoli,
